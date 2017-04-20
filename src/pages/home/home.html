@@ -1,14 +1,48 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Payment initialization
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="ui cards" style="margin:auto">
+  <div class="card">
+    <div class="content">
+      <div class="header">Bank Payment</div>
+      <div class="description">
+        Pain 001.
+      </div>
+    </div>
+    <div class="ui bottom attached button">
+      <i class="add icon"></i>
+      Init psyment
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">Fed</div>
+      <div class="description">
+          Fed payment
+      </div>
+    </div>
+    <div class="ui bottom attached button">
+      <i class="add icon"></i>
+      Init psyment
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <div class="header">SWIFT</div>
+      <div class="description">
+        Swift payment
+      </div>
+    </div>
+    <div class="ui bottom attached button" (click) = "openTransaction()">
+      <i class="add icon"></i>
+      Init psyment
+    </div>
+  </div>
+</div>
 </ion-content>

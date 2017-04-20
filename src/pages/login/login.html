@@ -1,0 +1,37 @@
+<ion-navbar>
+  <ion-title>
+    Login
+  </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+  
+<div class="ui middle aligned center aligned grid" [style.width]="isMobile ? '' : '30%'" 
+                                                   [style.margin]="isMobile ? '' : 'auto'" > 
+  <div class="column">
+    <h2 class="ui header">
+      <div class="content">
+        Log-in
+      </div>
+    </h2>
+    <form class="ui form">
+      <div class="ui segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="email" id="email" placeholder="E-mail address" [(ngModel)]="email">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" id="password" placeholder="Password" [(ngModel)]="password"> 
+          </div>
+        </div>
+        <div class="ui red message" *ngIf="errorMessage">{{errorMessage}}</div>
+        <div class="ui fluid large submit button" (click)="login()">Login</div>
+      </div>
+    </form>
+  </div>
+</div>
+</ion-content>

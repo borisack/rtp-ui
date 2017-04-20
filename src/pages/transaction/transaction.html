@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Payment initialization
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <form class="ui form">
+  <div class="field">
+    <label>Name</label>
+    <div class="two fields">
+      <div class="field">
+        <input type="text" name="firstName" placeholder="First Name">
+      </div>
+      <div class="field">
+        <input type="text" name="slastName" placeholder="Last Name">
+      </div>
+    </div>
+  </div>
+  
+  <div class="fields">
+    <div class="three wide field">
+      <input type="text" name="accNumber" maxlength="16" placeholder="Account Number">
+    </div>
+    <div class="six wide field">
+      <div class="two fields">
+        <div class="field">
+          <select class="ui fluid search dropdown" name="CCY">
+            <option value="">Currency</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+        <div class="field">
+          <input type="text" name="amount" maxlength="" placeholder="Amount">
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div class="ui button" tabindex="0">Initiate</div>
+</form>
+</ion-content>
